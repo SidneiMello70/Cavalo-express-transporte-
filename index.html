@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cavalo Express | Transporte de Cavalos com Excelência</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f9f9f9; color: #333; }
+    header, footer { background-color: #001f3f; color: white; padding: 2em; text-align: center; }
+    nav ul { list-style-type: none; padding: 0; display: flex; justify-content: center; background-color: #003366; margin: 0; }
+    nav ul li { margin: 0 1em; }
+    nav ul li a { color: white; text-decoration: none; font-weight: bold; transition: 0.3s; }
+    nav ul li a:hover { color: #ffcc00; }
+    section { padding: 3em 10%; background-color: #fff; }
+    h2 { border-left: 5px solid #003366; padding-left: 0.5em; color: #003366; }
+    .org-chart, .flow-chart, .gallery { max-width: 1000px; margin: auto; }
+    img { max-width: 100%; height: auto; border-radius: 10px; margin-bottom: 1em; }
+    ul { list-style-type: square; }
+    .button { background-color: #003366; color: white; padding: 12px 24px; border: none; cursor: pointer; border-radius: 5px; transition: 0.3s; }
+    .button:hover { background-color: #00509e; }
+    .accordion { cursor: pointer; padding: 1em; background-color: #f1f1f1; border: none; outline: none; transition: 0.4s; width: 100%; text-align: left; font-weight: bold; }
+    .accordion:hover { background-color: #ddd; }
+    .panel { padding: 0 1em; display: none; background-color: white; overflow: hidden; }
+    .highlight { background-color: #e6f2ff; padding: 1em; border-left: 4px solid #00509e; margin-top: 2em; }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="logo.png" alt="Logo Cavalo Express" style="max-height: 120px; margin-bottom: 1em;">
+  <h1>Cavalo Express</h1>
+  <p>Transporte Premium de Cavalos com Profissionalismo e Segurança</p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#historia">Empresa</a></li>
+    <li><a href="#valores">Valores</a></li>
+    <li><a href="#cientifica">Ciência</a></li>
+    <li><a href="#galeria">Galeria</a></li>
+    <li><a href="#bemestar">Bem-Estar</a></li>
+    <li><a href="#biodiversidade">Meio Ambiente</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+</nav>
+
+<section id="historia">
+  <h2>Sobre a Cavalo Express</h2>
+  <p>Fundada em 1998 por dois amigos apaixonados por cavalos e logística, a Cavalo Express nasceu com o compromisso de elevar o padrão do transporte equino no Brasil. Com infraestrutura moderna, frota especializada e uma equipe técnica altamente treinada, tornamo-nos referência nacional no transporte seguro e humanizado de cavalos.</p>
+  <div class="highlight">
+    <strong>+25 anos de mercado</strong> | Frota própria e rastreada | Cobertura nacional
+  </div>
+</section>
+
+<!-- Outras seções omitidas para brevidade -->
+
+<footer>
+  <p>&copy; 2025 Cavalo Express. Profissionalismo e respeito no transporte de equinos.</p>
+</footer>
+
+<script>
+  const acc = document.getElementsByClassName("accordion");
+  for (let i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      const panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+</script>
+
+</body>
+</html>
